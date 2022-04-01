@@ -1,4 +1,4 @@
-## movie-wishlist app in vue-native
+## movie-wishlist app in react-native
 
 <img alt="movie-wishlist app in vue-native" src="gif/movie-wishlist-app.gif" width="260" height="560" />
 
