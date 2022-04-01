@@ -32,3 +32,54 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> = Composit
   BottomTabScreenProps<RootTabParamList, Screen>,
   NativeStackScreenProps<RootStackParamList>
 >;
+
+export interface Movie {
+  language:    Language[];
+  cast:        string[];
+  directors:   string[];
+  genres:      Genre[];
+  episodes:    any[];
+  _id:         string;
+  title:       string;
+  plot:        string;
+  fullPlot:    string;
+  poster:      string;
+  thumbnail:   string;
+  rated:       Rated;
+  runtime:     number;
+  released:    Date;
+  year:        number;
+  imdb:        number;
+  videoType:   VideoType;
+  categorised: Categorised;
+  __v:         number;
+}
+
+export enum Categorised {
+  Popular = "popular",
+}
+
+export enum Genre {
+  Action = "action",
+  Adventure = "adventure",
+  SciFi = "sci-fi",
+}
+
+export enum Language {
+  English = "English",
+  Hindi = "Hindi",
+}
+
+export enum Rated {
+  NotRated = "Not rated",
+}
+
+export enum VideoType {
+  Movie = "movie",
+  Series = "series",
+}
+
+export interface MovieState {
+  movies: Movie[],
+  wishlist: Movie[],
+}

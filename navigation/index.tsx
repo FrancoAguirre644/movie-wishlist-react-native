@@ -63,6 +63,7 @@ function BottomTabNavigator() {
         component={HomeScreen}
         options={{
           title: 'Home',
+          headerShown: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
         }}
       />
@@ -71,6 +72,7 @@ function BottomTabNavigator() {
         component={WishlistScreen}
         options={{
           title: 'Wishlist',
+          headerShown: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
         }}
       />
